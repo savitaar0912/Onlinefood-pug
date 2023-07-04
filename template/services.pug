@@ -1,0 +1,28 @@
+extends base.pug 
+
+block scripts 
+    script(src = '/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        //- include ../static/phone.css
+
+block content
+    section#services-container
+            h1.h-primary.center Our Services
+            div#services
+                div.box
+                    img(src="/static/1.jpg" alt="")
+                    h2.h-secondary.center Food Ordering
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti amet reprehenderit ex? Eligendi sint recusandae quo vitae quasi consequatur adipisci! Eum repudiandae a assumenda Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ut cumque nulla quibusdam ab ad harum dignissimos temporibus soluta autem..
+                
+                div.box
+                    img(src="/static/2.jpg" alt="")
+                    h2.h-secondary.center Fruit Eaters
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti amet reprehenderit ex? Eligendi sint recusandae quo vitae quasi consequatur adipisci! Eum repudiandae a assumenda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officiis praesentium voluptatibus modi iusto voluptates perspiciatis dignissimos vero sint dolore..
+    
+                div.box
+                    img(src="/static/3.jpg" alt="")
+                    h2.h-secondary.center Pizza Ordering
+                    p Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vitae praesentium, tempora ullam dolores temporibus repudiandae pariatur ad quibusdam nam. dolor sit amet consectetur adipisicing elit. Unde deleniti amet reprehenderit ex? Eligendi sint recusandae quo vitae quasi consequatur adipisci! Eum repudiandae a assumenda.

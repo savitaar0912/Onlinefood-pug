@@ -1,0 +1,22 @@
+extends base.pug 
+
+block scripts 
+    script(src = '/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css 
+        include ../static/phone.css
+
+block content
+    section.client-section
+        h1.h-primary.center Our Clients 
+        div#clients
+            div.client-item
+                img(src="/static/logo1.img" alt="")
+            div.client-item
+                img(src="/static/logo2.img" alt="")
+            div.client-item
+                img(src="/static/logo3.img" alt="")
+            div.client-item
+                img(src="/static/logo4.img" alt="")

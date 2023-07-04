@@ -1,0 +1,217 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* CSS Variable */
+/* :root {
+    --navbar-ht: 60px;
+} */
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .25;
+}
+/* Navigation Bar:Logo and Image */
+#logo {
+    margin: 5px 25px;
+}
+#logo img {
+    height: 70px;
+}
+/* Navigation Bar:List Syle */
+#navbar ul {
+    display: flex;
+}
+#navbar ul li {
+    margin: 5px 10px;
+    padding-bottom: 5px;
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a {
+    display: block;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#navbar ul li a:hover {
+    color: rgb(63, 62, 62);
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+    padding: 0px 5px;
+    height: 580px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before {
+    content: "";
+    background: url('/static/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#home h1 {
+    /* color: white; */
+    font-family: 'Baloo Bhai 2', 'cursive';
+    text-align: center;
+}
+#home p {
+    /* color: white; */
+    font-size: larger;
+    text-align: center;
+}
+
+/* Service Section */
+#services-container{
+    margin-top: 20px;
+}
+#services {
+    display: flex;
+    margin: 20px;
+    font-family: 'Baloo Bhai 2', 'cursive';
+}
+#services .box {
+    border: 2px solid red;
+    border-radius: 25px;
+    background-color: rgb(235, 208, 208);
+    /* color: rgb(18, 145, 102); */
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 5px;
+}
+#services .box img {
+    height: 160px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+#services .box p {
+    margin: auto;
+    /* color: rgb(18, 145, 102); */
+    text-align: center;
+}
+
+/* Client Section */
+#client-section {
+    /* height: 300px; */
+    margin-bottom: 30px;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('/static/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item {
+    margin: 10px 25px;
+    padding: 10px 35px;
+}
+.client-item img {
+    height: 100px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/static/contact.jpg') no-repeat center center/cover;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+#contact-box form {
+    width: 45%;
+}
+#contact-box form label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', 'cursive';
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 2px solid rgb(245, 245, 124);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+}
+
+/* Utility Class */
+.h-primary {
+    font-size: 3.8rem;
+    font-family: 'Baloo Bhai 2', 'cursive';
+    padding: 10px;
+    /* color: rgb(2, 250, 167); */
+}
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 10px;
+    font-family: 'Baloo Bhai 2', 'cursive';
+}
+.btn {
+    margin: 10px 265px;
+    padding: 5px 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(241, 235, 235);
+    background-color: rgb(163, 159, 159);
+    border: 2px double black;
+    border-radius: 15px;
+}
+.center{
+    text-align: center;
+}
